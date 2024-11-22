@@ -26,7 +26,7 @@ def setup_platform(
 class PoolPumpSpeedSensor(SensorEntity):
     """Pool pump speed sensor."""
 
-    _pump = pump.Pump("http://192.168.1.94")
+    _pump = pump.Pump("http://192.168.1.54")
 
     _attr_name = "Pool Pump Speed"
     _attr_native_unit_of_measurement = REVOLUTIONS_PER_MINUTE
@@ -43,7 +43,7 @@ class PoolPumpSpeedSensor(SensorEntity):
 class PoolPumpPowerSensor(SensorEntity):
     """Pool pump power sensor."""
 
-    _pump = pump.Pump("http://192.168.1.94")
+    _pump = pump.Pump("http://192.168.1.54")
 
     _attr_name = "Pool Pump Power"
     _attr_native_unit_of_measurement = POWER_WATT
