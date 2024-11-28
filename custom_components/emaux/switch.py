@@ -18,7 +18,7 @@ def setup_platform(
     """Set up the switch platform."""
     add_entities([PoolPumpSwitch()], update_before_add=True)
 
-class PoolPumpSpeedSensor(SwitchEntity):
+class PoolPumpSwitch(SwitchEntity):
     """Pool pump switch."""
 
     _pump = pump.Pump("http://192.168.1.54")
